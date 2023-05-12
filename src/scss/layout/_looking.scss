@@ -1,0 +1,41 @@
+.looking {
+    margin: 15px;
+    &__small{
+        color: #8ccbea;
+        font-family: $font-roboto;
+        font-size: 0.9rem;
+        line-height: 2.14;
+    }
+    &__title {
+        font-family: $font-roboto-slab;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.25;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-family: $font-roboto;
+        font-size: 1.13rem;
+        line-height: 1.6rem;
+        
+    }
+    &__go {
+        border: solid 3px $color-orange;
+        height: 45px;
+        width: 76px;
+        border-radius: 22.5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        &--text {
+            text-decoration: none;
+            color: $color-orange;
+            font-family: $font-roboto;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+    }
+}
