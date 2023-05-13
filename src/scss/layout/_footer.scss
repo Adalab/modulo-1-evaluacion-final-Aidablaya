@@ -7,7 +7,22 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
+
+    &__ball {
+        
+        background-color: $color-white;
+        height: 45px;
+        width: 45px;
+        border-radius: 75%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 45px;
+        
+                
+        }
+    
     
     &__index, &__networks {
         display: flex;
@@ -32,6 +47,5 @@
             line-height: 2.14;
         }
     }
-    
     
 }
