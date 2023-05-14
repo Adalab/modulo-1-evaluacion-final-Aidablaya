@@ -1,5 +1,8 @@
 .looking {
     margin: 15px;
+    @include tablet () {
+        margin: 40px;
+    }
     &__small{
         color: #8ccbea;
         font-family: $font-roboto;

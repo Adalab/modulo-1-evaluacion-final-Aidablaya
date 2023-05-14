@@ -10,9 +10,11 @@
         font-weight: bold;
         font-size: 1.5rem;
         font-weight: bold;
-        margin-bottom: 45px;   
+        margin-bottom: 45px;
+         
     }
     &__box {
+        
         @include tablet () {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -54,6 +56,8 @@
     &__para {
         font-family: $font-roboto;
         font-size: 1.12rem;
-        line-height: 1.67rem;
+        line-height: 1.9rem;
+        width: 180px;
+
     }
 }
