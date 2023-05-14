@@ -12,6 +12,13 @@
         font-weight: bold;
         margin-bottom: 45px;   
     }
+    &__box {
+        @include tablet () {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+    }
     &__more {
         background-color: $color-orange;
         width: 184px;
@@ -24,6 +31,11 @@
         font-family: $font-roboto;
         font-size: 1.25rem;
         margin-bottom: 60px;
+        &:hover {
+            background-color: $color-lightblue;
+            cursor: pointer;
+                }
+        
     }
     
 }

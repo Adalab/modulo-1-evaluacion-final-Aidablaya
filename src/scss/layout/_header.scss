@@ -17,6 +17,10 @@
         justify-content: center;
         align-items: center;
         position: fixed;
+        &:hover {
+            background-color: orange;
+            cursor: pointer;
+                }
         
         &--tres {
             width: 14px;
@@ -40,6 +44,7 @@
             font-size: 2.63rem;
             font-weight: bold;
             text-align: center;
+            line-height: 3.5rem;
         
         }
         &--para {
@@ -55,14 +60,20 @@
             display: flex;
             justify-content: center;
             margin: 45px;
+            &:hover {
+                background-color: orange;
+                cursor: pointer;
+                    }
+                }
+                
             
         }
     }
                    
 
-}  
 
-            
-           
+
+ 
+
     
     

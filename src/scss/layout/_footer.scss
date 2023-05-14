@@ -7,29 +7,63 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 20px;
-
+    padding-bottom: 45px;
+    
+    @include tablet () {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
     &__ball {
-        
-        background-color: $color-white;
-        height: 45px;
-        width: 45px;
-        border-radius: 75%;
         display: flex;
-        justify-content: center;
-        position: relative;
-        bottom: 45px;
+        order: 0;
         
-                
+        @include tablet () {
+            width: 100vw;
+            flex-direction: row;
+            justify-content: center;
         }
-    
-    
+        &--box {        
+            background-color: $color-white;
+            height: 45px;
+            width: 45px;
+            border-radius: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -20px;
+            &:hover {
+            background-color: $color-lightblue;
+            cursor: pointer;
+                    }                                
+                }
+                    
+            }
+    &__index {
+        @include tablet () {
+            order: 2;
+        }
+    }
+    &__networks {
+        @include tablet () {
+            order: 3;
+            margin-right: 40px;
+        }   
+    }
     &__index, &__networks {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 30px;
         
+        @include tablet () {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            align-self: flex-start;
+        }
+       
         
         &--link, &--one {
             text-decoration: none;
@@ -37,15 +71,33 @@
             line-height: 1.88;
             
         }
+    
+    
     }
+ 
+    
     &__copy {
-        margin: 30px;
-        padding-bottom: 45px;
         
+        padding-bottom: 45px;
+        font-size: 0.8rem;;
+        @include tablet () {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            align-self: flex-start;
+            margin-left: 40px;
+            
+        }
 
         &--number {
             line-height: 2.14;
+            
         }
+        
+        .fa-heart {
+            color: #f26002;
+         }
     }
     
 }
+
