@@ -14,10 +14,9 @@
         flex-wrap: wrap;
         justify-content: space-between;        
     }
+
     @include desktop () {
-        justify-content: center;
-        
-        
+        justify-content: center;       
     }
     
     &__ball {
@@ -29,6 +28,7 @@
             flex-direction: row;
             justify-content: center;
         }
+
         &--box {        
             background-color: $color-white;
             height: 45px;
@@ -42,55 +42,56 @@
             &:hover {
             background-color: $color-lightblue;
             cursor: pointer;
-                    }                                
-                }
+            }                                
+        }
                     
-            }
+    }
+
     &__index {
         @include tablet () {
             order: 2;
         }
     }
+
     &__networks {
         @include tablet () {
             order: 3;
             margin-right: 40px;
         }   
     }
+
     &__index, &__networks {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: $margin;
+        margin-bottom: $margin;
+
         @include tablet () {
             display: flex;
             flex-direction: column;
             text-align: start;
             align-self: flex-start;
         }
+
         @include desktop () {
-            margin: 45px 60px 0px 60px;
-            
-            
-        }
+            margin: 45px 60px 0px 60px;                       
+                }
        
-        
-        &--link, &--one {
+            &--link, &--one {
             text-decoration: none;
             color: $color-white;
-            line-height: 1.88;
+            line-height: $size30;
             
         }
     
-    
     }
- 
-    
+     
     &__copy {
         
-        margin-top: 15px;
-        font-size: 0.8rem;;
+        margin-top: $margin;
+        font-size: 0.8rem;
+
         @include tablet () {
             display: flex;
             flex-direction: column;
@@ -98,10 +99,9 @@
             align-self: flex-start;
             margin-left: 40px;            
         }
+
         @include desktop () {
-            margin: 45px 60px 0px 60px;
-            
-            
+            margin: 45px 60px 0px 60px;                        
         }
 
         &--number {
@@ -110,7 +110,7 @@
         }
         
         .fa-heart {
-            color: #f26002;
+            color: $color-orange;
          }
     }
     

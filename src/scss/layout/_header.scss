@@ -62,10 +62,10 @@
         }
         &--para {
             font-family: $font-roboto;
-            font-size: 1rem;
+            font-size: $size16;
             line-height: 1.9rem;
             @include tablet () {
-                font-size: 1.5rem;
+                font-size: $size24;
                 margin-top: 20px;
             }
         }

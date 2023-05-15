@@ -9,28 +9,28 @@
     
     &__title {
         font-family: $font-roboto-slab;
-        font-size: 1.12rem;
+        font-size: $size18;
         font-weight: bold;
-        line-height: 1.9rem;
-        line-height: 1.67rem;
+        line-height: $size30;
+        line-height: $size30;
         
 
         @include tablet () {
-            font-size: 1.5rem;
-            line-height: 1.25rem;
-            margin-bottom: 15px;
+            font-size: $size24;
+            line-height: $size20;
+            margin-bottom: $margin;
         }
         
     }
     &__para {
         font-family: $font-roboto;
-        font-size: 1.12rem;
-        line-height: 1.9rem;
+        font-size: $size18;
+        line-height: $size30;
         width: 100%;
         
         @include tablet () {
-            font-size: 1.25rem;
-            line-height: 1.5rem;
+            font-size: $size20;
+            line-height: $size24;
 
             
         }
