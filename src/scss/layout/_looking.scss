@@ -1,6 +1,4 @@
 .looking {
-    display: flex;
-    flex-direction: column;
     margin: 15px 15px 45px 15px;
     @include tablet () {
         margin: 40px 40px 60px 40px;
@@ -13,33 +11,31 @@
     &__small{
         color: #8ccbea;
         font-family: $font-roboto;
-        font-size: 0.87rem;
+        font-size: 0.9rem;
         line-height: 2.14;
         @include desktop () {
-            font-size: size16;
-            line-height: $size30;
+            font-size: 1rem;
             
         }
     }
     &__title {
         font-family: $font-roboto-slab;
-        font-size: $size24;
+        font-size: 1.5rem;
         font-weight: bold;
-        line-height: $size20;
-        margin-bottom: $margin;
+        line-height: 1.25;
+        margin-bottom: 15px;
         @include desktop () {
-            font-size: $size32;
-            line-height: $size30;
-            margin-top: $margin;
+            font-size: 2rem;
+            line-height: 1.41rem;
         }
     }
     &__text {
         font-family: $font-roboto;
-        font-size: $size18;
+        font-size: 1.13rem;
         line-height: 1.6rem;
         @include desktop () {
-            font-size: $size20;
-            line-height: $size24;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
         }
         
     }
@@ -54,38 +50,24 @@
         align-items: center;
         margin-bottom: 30px;
         margin-top: 30px;
-        
-        
         &:hover {
-            background-color: $color-footer;
+            background-color: $color-lightblue;
             cursor: pointer;
-            transition-duration: 0.5s;
                 }
-        
-        }
         @include tablet () {
             height: 45px;
             width: 91px;
-        }
+                }
         @include desktop () {
             height: 45px;
             width: 160px;
+                }
+        &--text {
+            text-decoration: none;
+            color: $color-orange;
+            font-family: $font-roboto;
+            font-size: 1.25rem;
+            font-weight: bold;
         }
-
-            &--text {
-                text-decoration: none;
-                color: $color-orange;
-                font-family: $font-roboto;
-                font-size: $size20;
-                font-weight: bold;
-            }
     }
-    /*al poner las transiciones el texto no aplicaba nada*/
-    .looking__go--text {
-        text-decoration: none;
-        text-decoration: none;
-        color: $color-orange;
-        font-family: $font-roboto;
-        font-size: $size20;
-        font-weight: bold;
-    }
+}
