@@ -12,9 +12,14 @@
     @include tablet () {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between;        
+    }
+    @include desktop () {
+        justify-content: center;
+        
         
     }
+    
     &__ball {
         display: flex;
         order: 0;
@@ -64,6 +69,11 @@
             text-align: start;
             align-self: flex-start;
         }
+        @include desktop () {
+            margin: 45px 60px 0px 60px;
+            
+            
+        }
        
         
         &--link, &--one {
@@ -86,8 +96,11 @@
             flex-direction: column;
             text-align: start;
             align-self: flex-start;
-            margin-left: 40px;
-    
+            margin-left: 40px;            
+        }
+        @include desktop () {
+            margin: 45px 60px 0px 60px;
+            
             
         }
 

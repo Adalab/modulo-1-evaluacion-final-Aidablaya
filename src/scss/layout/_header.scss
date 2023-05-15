@@ -22,7 +22,7 @@
         align-items: center;
         position: fixed;
         &:hover {
-            background-color: orange;
+            background-color: $color-lightblue;
             cursor: pointer;
                 }
         
@@ -38,8 +38,9 @@
         height: 90%;
         align-items: center;
         justify-content: flex-end;
-        margin: 15px;
-        position: relative;
+        margin: 15px 15px 0px 15px;
+        
+        
         
        
                   
@@ -75,9 +76,9 @@
             border-radius: 75%;
             display: flex;
             justify-content: center;
-            margin: 45px;
+            margin: 45px 0px 0px 0px;
             &:hover {
-                background-color: orange;
+                background-color: $color-lightblue;
                 cursor: pointer;
                     }
                 }

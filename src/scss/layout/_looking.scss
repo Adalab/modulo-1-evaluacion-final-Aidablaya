@@ -1,13 +1,22 @@
 .looking {
-    margin: 15px;
+    margin: 15px 15px 45px 15px;
     @include tablet () {
-        margin: 40px;
+        margin: 40px 40px 60px 40px;
     }
+    @include desktop () {
+         margin: 40px 0px 60px 275px; 
+         width: 730px;  
+            
+        }
     &__small{
         color: #8ccbea;
         font-family: $font-roboto;
         font-size: 0.9rem;
         line-height: 2.14;
+        @include desktop () {
+            font-size: 1rem;
+            
+        }
     }
     &__title {
         font-family: $font-roboto-slab;
@@ -15,11 +24,19 @@
         font-weight: bold;
         line-height: 1.25;
         margin-bottom: 15px;
+        @include desktop () {
+            font-size: 2rem;
+            line-height: 1.41rem;
+        }
     }
     &__text {
         font-family: $font-roboto;
         font-size: 1.13rem;
         line-height: 1.6rem;
+        @include desktop () {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
         
     }
     &__go {
@@ -36,6 +53,14 @@
         &:hover {
             background-color: $color-lightblue;
             cursor: pointer;
+                }
+        @include tablet () {
+            height: 45px;
+            width: 91px;
+                }
+        @include desktop () {
+            height: 45px;
+            width: 160px;
                 }
         &--text {
             text-decoration: none;

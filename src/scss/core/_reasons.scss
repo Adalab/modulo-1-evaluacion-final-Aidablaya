@@ -1,4 +1,84 @@
 .reasons {
+    background-color: $color-ice-blue;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+        @include tablet () {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-row-gap: 30px;
+            grid-template-areas: "h2 h2 h2" "inone intwo inthree" "more more more";
+            
+        }
+        @include desktop () {
+            
+        }
+
+    &__h2 {
+        font-family: $font-roboto-slab;
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 15px;
+        height: 30px;
+        
+        @include tablet () {
+            margin-top: 30px;
+            grid-area: h2;
+        }
+        @include desktop () {
+            font-size: 2rem;
+        }
+        }
+    &__inone {
+        grid-area: inone;
+    }
+    &_intwo {
+        grid-area: intwo;
+    }
+    &_inthree {
+        grid-area: inthree;
+    }
+
+    &__more {
+        @include tablet () {    
+            grid-area: more;
+        }
+        &--orange {
+            background-color: $color-orange;
+            width: 184px;
+            height: 45px;
+            border-radius: 22.5px;
+            color: $color-white;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-roboto;
+            font-size: 1.25rem;
+            margin-bottom: 60px;
+            &:hover {
+                background-color: $color-lightblue;
+                cursor: pointer;
+                    }
+        }
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+/*
+.reasons {
     margin: 15px;
     text-align: center;
     display: flex;
@@ -11,6 +91,13 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 45px;
+        margin-top: 15px;
+        @include tablet () {
+            margin-top: 30px;
+        }
+        @include desktop () {
+            font-size: 2rem;
+        }
          
     }
     &__box {
@@ -19,6 +106,14 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr;
+        }
+        @include desktop () {
+            gap: 30px;
+            width: 100vw;
+            margin-left: 85px;
+            margin-right: 85px;
+            
+            
         }
     }
     &__more {
@@ -46,18 +141,30 @@
 .article {
     margin: $margin;
     margin-bottom: 45px;
+    
     &__title {
         font-family: $font-roboto-slab;
         font-size: 1.12rem;
         font-weight: bold;
         line-height: 1.9rem;
         line-height: 1.67rem;
+        @include desktop () {
+            font-size: 1.5rem;
+            line-height: 1.24rem;
+        }
     }
     &__para {
         font-family: $font-roboto;
         font-size: 1.12rem;
         line-height: 1.9rem;
         width: 180px;
+        
+        @include desktop () {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+
+            
+        }
 
     }
 }
