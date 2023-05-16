@@ -51,8 +51,10 @@
         margin-bottom: 30px;
         margin-top: 30px;
         &:hover {
-            background-color: $color-lightblue;
+            background-color: $color-orange;
+            transform: scale(1.1);
             cursor: pointer;
+            transition-duration: 0.7s;
                 }
         @include tablet () {
             height: 45px;
@@ -68,6 +70,9 @@
             font-family: $font-roboto;
             font-size: 1.25rem;
             font-weight: bold;
+            &:hover {
+                color: $color-white;
+                    }
         }
     }
 }
